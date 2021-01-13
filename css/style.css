@@ -1,0 +1,25 @@
+a{
+	cursor: pointer;
+	color: #636363;
+}
+.wrap {
+	overflow-x:hidden;
+	}
+				.slideInRight {
+				  animation-name: slideInRight;
+				}
+				.animated {
+				  animation-duration: 1s;
+				  animation-fill-mode: both;
+				}
+
+				@keyframes slideInRight {
+				  from {
+				    transform: translate3d(100%, 0, 0);
+				    visibility: visible;
+				  }
+
+				  to {
+				    transform: translate3d(0, 0, 0);
+				  }
+				}
