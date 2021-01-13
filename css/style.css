@@ -2,6 +2,12 @@ a{
 	cursor: pointer;
 	color: #636363;
 }
+select{
+	height: 38px;
+	width: 100%;
+	border-radius: 2px;
+	border:1px solid #ddd;
+}
 .wrap {
 	overflow-x:hidden;
 	}
