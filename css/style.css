@@ -11,6 +11,13 @@ select{
 html,body,ul,li,p,h1,h2,h3,h4,h5,h6,span{
 	font-family: 'Montserrat', sans-serif;
 }
+h5 {
+    font-size: 1.15rem !important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: .5rem !important;
+}
 .wrap {
 	overflow-x:hidden;
 	}
