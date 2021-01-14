@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +22,7 @@
         window.history.back();
       }
     </script>
-    <style type="text/css">
+      <style type="text/css">
       .img-fluid{
         max-width: 96%;
       }
@@ -51,6 +52,8 @@
        width: 100%;
        border-radius: .25rem;
       }
+
+
     </style>
   </head>
   <body>
@@ -153,8 +156,9 @@
                     </p>
                   </div>
                   <div class="col-3">
-                    <a type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" href="add-to-cart.html">
-                      Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:3px;"></i></a>
+                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                      Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:3px;"></i>
+                    </a>
                   </div>
                     </div>
                   </div>
@@ -171,15 +175,12 @@
                     </p>
                   </div>
                   <div class="col-3">
-                    <a type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" href="add-to-cart.html">
+                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
                       Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:3px;"></i></a>
                   </div>
                     </div>
                   </div>
                 </div>
-
-                
-
                </div>
               </div>
               <div
@@ -201,7 +202,7 @@
                     </p>
                   </div>
                   <div class="col-3">
-                    <a type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" href="add-to-cart.html">
+                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
                       Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:3px;"></i></a>
                   </div>
                     </div>
@@ -219,14 +220,13 @@
                     </p>
                   </div>
                   <div class="col-3">
-                   <a type="button" data-mdb-toggle="modal" data-mdb-target="#exampleModal" style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" href="add-to-cart.html">
+                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
                       Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:3px;"></i></a>
                   </div>
                     </div>
                   </div>
                 </div>
-
-                  </div>
+                </div>
               </div>
             </div>
             <!-- Tabs content -->
@@ -235,7 +235,79 @@
     </div>
   </div>
 </div>
+</div>
     <!-- End your project here-->
+    <div class="modal fade" id="exampleModal"aria-labelledby="exampleModalLabel" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+
+                        <button
+                                class="accordion-button"
+                                type="button"
+                                data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                        >
+                            <span style="display: block;font-size: 12px;">1 ITEM </span>
+                            <span style="display: block;font-size: 12px;">₹750 (plus taxes)</span>
+
+                        </button>
+                    </h2>
+                    <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingOne"
+                            data-mdb-parent="#accordionExample"
+                    >
+                        <div class="accordion-body">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title">Veg Extravaganza</h5>
+                                        <p class="card-text">₹250</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="def-number-input number-input safari_only">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                    class="minus"></button>
+                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                    class="plus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h5 class="card-title">Fish Of The Day</h5>
+                                        <p class="card-text">₹750</p>
+                                    </div>
+                                    <div class="col-4" style="padding-right: 10px;">
+                                        <div class="def-number-input number-input safari_only">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                    class="minus"></button>
+                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                    class="plus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="add-to-cart.html" class="btn btn-warning">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   </body>
 
   <!-- MDB -->
@@ -245,82 +317,3 @@
 </html>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-mdb-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div> -->
-
-      <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-
-      <div
-        class="accordion-button"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#collapseOne"
-        aria-expanded="true"
-        aria-controls="collapseOne"
-      >
-        <span style="display: block;font-size: 12px;">1 ITEM </span>
-        <span style="display: block;font-size: 12px;">₹750 (plus taxes)</span>
-
-      </div>
-    </h2>
-    <div
-      id="collapseOne"
-      class="accordion-collapse collapse"
-      aria-labelledby="headingOne"
-      data-mdb-parent="#accordionExample"
-    >
-      <div class="accordion-body">
-       <div class="card-body">
-                    <div class="row">
-                      <div class="col-8">
-                    <h5 class="card-title">Veg Extravaganza</h5>
-                    <p class="card-text">₹250</p>
-                  </div>
-                  <div class="col-4">
-                    <div class="def-number-input number-input safari_only">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                    <input class="quantity" min="0" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                    </div>
-                    </div>
-                    </div>
-              </div>
-                <div class="card-body">
-                    <div class="row">
-                      <div class="col-8">
-                    <h5 class="card-title">Fish Of The Day</h5>
-                    <p class="card-text">₹750</p>
-                  </div>
-                  <div class="col-4" style="padding-right: 10px;">
-                    <div class="def-number-input number-input safari_only">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                    <input class="quantity" min="0" name="quantity" value="1" type="number">
-                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-                    </div>
-                    </div>
-                    </div>
-                  </div>     
-        </div>
-      <div class="modal-footer">
-        <a href="add-to-cart.html" class="btn btn-warning">Continue</a>
-      </div>
-    </div>
-  </div>
-</div>
