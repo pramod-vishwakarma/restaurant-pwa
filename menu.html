@@ -127,9 +127,11 @@
                     </p>
                   </div>
                   <div class="col-3">
+                  <button onclick="myFunction()">Try it</button>
                     <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px 7px 4px 7px;font-size:14px;" href="add-to-cart.html">
                       Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:3px;"></i></a>
                   </div>
+
                     </div>
                   </div>
                 </div>
@@ -199,7 +201,7 @@
                     </div>
                   </div>
                 </div>
-
+                 
                   </div>
               </div>
             </div>
@@ -213,7 +215,21 @@
   </body>
 
   <!-- MDB -->
+  <script>
+function myFunction() {
+  var node = document.createElement("LI");
+  var textnode = document.createTextNode("Water");
+  node.appendChild(textnode);
+  document.getElementById("myList").appendChild(node);
+}
+</script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript"></script>
 </html>
+<div class="card-body">
+   <ul id="myList" style="position: absolute;bottom: 0px;">
+      <!-- <li>Coffee</li>
+       <li>Tea</li> -->
+    </ul>
+   </div>

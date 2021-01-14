@@ -1,3 +1,6 @@
+ul,li{
+	list-style-type:none;
+}
 a{
 	cursor: pointer;
 	color: #636363;
