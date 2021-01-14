@@ -10,9 +10,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
     <!-- Google Fonts Roboto -->
-    <link
+     <!-- <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"/>
+     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"/> -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -76,138 +78,79 @@
             </div>
             </div>
           </nav>
-          <div class="mt-5">
+          <div class="mt-3">
             <div class="row">
-              <!-- Tabs navs -->
-            <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link active"
-                  id="ex2-tab-1"
-                  data-mdb-toggle="tab"
-                  href="#ex2-tabs-1"
-                  role="tab"
-                  aria-controls="ex2-tabs-1"
-                  aria-selected="true"
-                  >Veg</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="ex2-tab-2"
-                  data-mdb-toggle="tab"
-                  href="#ex2-tabs-2"
-                  role="tab"
-                  aria-controls="ex2-tabs-2"
-                  aria-selected="false"
-                  >Non-Veg</a
-                >
-              </li>
-            </ul>
-            <!-- Tabs navs -->
-
-            <!-- Tabs content -->
-            <div class="tab-content" id="ex2-content">
-              <div
-                class="tab-pane fade show active"
-                id="ex2-tabs-1"
-                role="tabpanel"
-                aria-labelledby="ex2-tab-1"
-              >
-               <div class="row">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                    <h5 class="card-title">Everyday Value 2 Med N.Veg Deluxe Combo</h5>
-                    <p class="card-text">
-                      <p class="card-text">₹235</p>
-                      2 Med Pizzas (Pepper BBQ & Onion + Chicken Fiesta)
-                    </p>
-                  </div>
-                  <div class="col-3">
-                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px;font-size:15px;" href="add-to-cart.html">
-                      Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:2px;"></i></a>
-                  </div>
-                    </div>
-                  </div>
-                </div>
-
-                  <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                    <h5 class="card-title">Veg Extravaganza</h5>
-                    <p class="card-text">₹235</p>
-                    <p class="card-text">
-                      Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & extra cheese
-                    </p>
-                  </div>
-                  <div class="col-3">
-                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px;font-size:15px;" href="add-to-cart.html">
-                      Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:2px;"></i></a>
-                  </div>
-                    </div>
-                  </div>
-                </div>
-
-                
-
-               </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="ex2-tabs-2"
-                role="tabpanel"
-                aria-labelledby="ex2-tab-2"
-              >
-                <div class="row">
-
-                 <div class="card">
+             <div class="card">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-9">
                     <h5 class="card-title">Fish Of The Day</h5>
                     <p class="card-text">₹750</p>
-                    <p class="card-text">
-                      Fresh catch of the day, Creamy potato mash, and herb grilled vegetables, curried 
-                    </p>
                   </div>
                   <div class="col-3">
-                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px;font-size:15px;" href="add-to-cart.html">
-                      Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:2px;"></i></a>
-                  </div>
+                    <div class="def-number-input number-input safari_only">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                    </div>
                     </div>
                   </div>
                 </div>
-
-                   <div class="card">
+                <div class="card">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-9">
-                    <h5 class="card-title">Grilled Garlic Jumbo Prawn</h5>
-                    <p class="card-text">₹990</p>
-                    <p class="card-text">
-                      Grilled vegetables, skillet potato, lemon caper sauce, chef's special salad.
-                    </p>
+                    <h5 class="card-title">Fish Of The Day</h5>
+                    <p class="card-text">₹750</p>
                   </div>
                   <div class="col-3">
-                    <a style="background-color: #fff;border:1px solid #ddd;border-radius:10%;padding:4px;font-size:15px;" href="add-to-cart.html">
-                      Add<i class="fa fa-plus" style="color:#636363;font-size:11px;margin-left:2px;"></i></a>
-                  </div>
+                    <div class="def-number-input number-input safari_only">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                    <input class="quantity" min="0" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                    </div>
                     </div>
                   </div>
                 </div>
+                <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="mb-3">
+            <div class="pt-4">
 
+              <h5 class="mb-3">The total amount of</h5>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                  Temporary amount
+                  <span id="basic-example-price">₹1500.00</span>
+                </li>
+                <!-- <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                  Shipping
+                  <span>Gratis</span>
+                </li> -->
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                  <div>
+                    <strong>The total amount of</strong>
+                    <strong>
+                      <p class="mb-0">(including VAT)</p>
+                    </strong>
                   </div>
-              </div>
+                  <span><strong id="basic-example-total">₹1500.00</strong></span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-warning btn-block waves-effect waves-light">Proceed to Pay</button>
             </div>
-            <!-- Tabs content -->
+          </div>
+          </div>
+          </div>
           </div>
       </div>
     </div>
   </div>
+</div>
 </div>
     <!-- End your project here-->
   </body>
